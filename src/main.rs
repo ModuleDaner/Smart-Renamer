@@ -6,5 +6,3 @@ fn main() {
     fetch_data();
     println!("Hello, world!");
 }
-
-//hi
