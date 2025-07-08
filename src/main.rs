@@ -1,8 +1,11 @@
 
-fn fetch_data() {
-    
-}
-fn main() {
-    fetch_data();
-    println!("Hello, world!");
+#![allow(unused_imports)]
+
+use std::{io};
+
+fn main() -> io::Result<()> {
+    let key = dotenv::var("API_KEY").unwrap();
+    println!("{key}");
+
+    Ok(())
 }
