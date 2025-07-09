@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 dotenv = "0.15.0"
 reqwest = "0.12.22"
+tokio = "1.46.1"

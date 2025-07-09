@@ -1,8 +1,11 @@
 
-pub async fn fetch_ai() -> &str {
+use std::collections::HashMap;
+
+#[tokio::main]
+pub async fn fetch_ai() -> String {
     let resp = reqwest::get("https://httpbin.org/ip")
-        .await?
+        .await
         .json::<HashMap<String, String>>()
-        .await?;
+        .await;
     return resp
 }
